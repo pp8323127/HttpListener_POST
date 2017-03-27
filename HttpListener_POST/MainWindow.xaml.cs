@@ -183,6 +183,7 @@ namespace HttpListener_POST
         private void showTextBox()
         {
             textBox.Text = File.ReadAllText("tmp.txt");
+            textBox.ScrollToEnd();
         }
 
         private void MainWindow_Closing(object sender, CancelEventArgs e)
