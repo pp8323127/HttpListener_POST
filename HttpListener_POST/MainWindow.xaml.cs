@@ -19,6 +19,8 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
 
+using System.ComponentModel;
+
 namespace HttpListener_POST
 {
     /// <summary>
@@ -176,6 +178,10 @@ namespace HttpListener_POST
             context.Response.Close();
         }
 
-
+        private void MainWindow_Closing(object sender, CancelEventArgs e)
+        {
+            //listener.Close();
+            listener.Stop();
+        }
     }
 }
