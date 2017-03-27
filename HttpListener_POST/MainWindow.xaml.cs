@@ -51,8 +51,7 @@ namespace HttpListener_POST
         public MainWindow()
         {
             InitializeComponent();
-
-
+            showTextBox();
 
 
 
@@ -138,6 +137,7 @@ namespace HttpListener_POST
 
                 //string strInvoice = mNow.ToString("yyyy-MM-dd HH:mm:ss") + ", " + post_data.Substring(post_data.Length - 10, 10) + ", " + Environment.NewLine;
                 string strInvoice = mNow.ToString("yyyy-MM-dd HH:mm:ss") + ", " + post_data + ", " + Environment.NewLine;
+                
 
                 //MessageBox.Show(strInvoice);
 
@@ -151,7 +151,6 @@ namespace HttpListener_POST
 
                 string path = @"tmp.txt";
                 File.AppendAllText(path, strInvoice);
-
 
 
                 //// Open the file to read from.
@@ -178,12 +177,23 @@ namespace HttpListener_POST
             //context.Response.Headers["mycustomResponseHeader"] = "mycustomResponse";
 
             context.Response.Close();
+            
+        }
+
+        private void showTextBox()
+        {
+            textBox.Text = File.ReadAllText("tmp.txt");
         }
 
         private void MainWindow_Closing(object sender, CancelEventArgs e)
         {
             //listener.Close();
             listener.Stop();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            showTextBox();
         }
     }
 }
