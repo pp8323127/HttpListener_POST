@@ -115,35 +115,37 @@ namespace HttpListener_POST
         {
             var context = listener.EndGetContext(result);
             Thread.Sleep(1000);
-            var data_text = new StreamReader(context.Request.InputStream, context.Request.ContentEncoding).ReadToEnd();
+            var post_raw_data = new StreamReader(context.Request.InputStream, context.Request.ContentEncoding).ReadToEnd();
 
             //functions used to decode json encoded data.
             //JavaScriptSerializer js = new JavaScriptSerializer();
-            //var data1 = Uri.UnescapeDataString(data_text);
-            //string da = Regex.Unescape(data_text);
-            // var unserialized = js.Deserialize(data_text, typeof(String));
+            //var data1 = Uri.UnescapeDataString(post_raw_data);
+            //string da = Regex.Unescape(post_raw_data);
+            // var unserialized = js.Deserialize(post_raw_data, typeof(String));
 
-            var cleaned_data = System.Web.HttpUtility.UrlDecode(data_text);
-            //MessageBox.Show(cleaned_data);
+            var post_data = System.Web.HttpUtility.UrlDecode(post_raw_data);
+            //MessageBox.Show(post_data);
 
-            if (cleaned_data != "")
+            if (post_data != "")
             {
-                string str = cleaned_data;
-                str.Substring(cleaned_data.Length - 10, 10);
+                string str = post_data;
+                str.Substring(post_data.Length - 10, 10);
                 //MessageBox.Show(str);
-                //MessageBox.Show(cleaned_data);
+                //MessageBox.Show(post_data);
 
                 DateTime mNow = DateTime.Now;
                 //MessageBox.Show(mNow.ToString("yyyy-MM-dd HH:mm:ss"));
 
-                string strInvoice = mNow.ToString("yyyy-MM-dd HH:mm:ss") + ", " + cleaned_data.Substring(cleaned_data.Length - 10, 10) + ", " + Environment.NewLine;
+                //string strInvoice = mNow.ToString("yyyy-MM-dd HH:mm:ss") + ", " + post_data.Substring(post_data.Length - 10, 10) + ", " + Environment.NewLine;
+                string strInvoice = mNow.ToString("yyyy-MM-dd HH:mm:ss") + ", " + post_data + ", " + Environment.NewLine;
+
                 //MessageBox.Show(strInvoice);
 
                 ////bool b = File.Exists("tmp.txt");        // 判定檔案是否存在
                 ////File.Create("tmp.txt");             // 建立檔案
                 //string text = File.ReadAllText("tmp.txt");  // 讀取檔案內所有文字
 
-                //File.WriteAllText("tmp.txt", text + "/n" + cleaned_data);     // 將 text 寫入檔案
+                //File.WriteAllText("tmp.txt", text + "/n" + post_data);     // 將 text 寫入檔案
 
 
 
