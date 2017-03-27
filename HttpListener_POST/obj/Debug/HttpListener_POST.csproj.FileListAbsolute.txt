@@ -1,0 +1,14 @@
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\bin\Debug\HttpListener_POST.exe.config
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\HttpListener_POST.csprojResolveAssemblyReference.cache
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\MainWindow.g.cs
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\App.g.cs
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\HttpListener_POST_MarkupCompile.cache
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\HttpListener_POST_MarkupCompile.lref
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\bin\Debug\HttpListener_POST.exe
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\bin\Debug\HttpListener_POST.pdb
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\MainWindow.baml
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\HttpListener_POST.g.resources
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\HttpListener_POST.Properties.Resources.resources
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\HttpListener_POST.csproj.GenerateResource.Cache
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\HttpListener_POST.exe
+c:\users\e508-nb\documents\visual studio 2015\Projects\HttpListener_POST\HttpListener_POST\obj\Debug\HttpListener_POST.pdb
