@@ -63,7 +63,8 @@ namespace HttpListener_POST
                 ///listener.Prefixes.Add("http://localhost:8000/");
                 //listener.Prefixes.Add("http://127.0.0.1:8000/");
                 //listener.Prefixes.Add("http://163.18.42.211:8000/");
-                listener.Prefixes.Add("http://163.18.42.211:1508/");
+                //listener.Prefixes.Add("http://163.18.42.211:1508/");
+                listener.Prefixes.Add("http://*:1508/");
                 listener.AuthenticationSchemes = AuthenticationSchemes.Anonymous;
 
                 listener.Start();
