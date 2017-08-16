@@ -6,3 +6,4 @@ log/*.log
 tmp/*.tmp
 *.sublime*
 sftp-config.json
+\HttpListener_POST\bin\Debug\*txt
