@@ -56,6 +56,7 @@ namespace HttpListener_POST
 
 
             //AddAddress("http://163.18.42.211:1508/", Environment.UserDomainName, Environment.UserName);
+            AddAddress("http://*:1508/", Environment.UserDomainName, Environment.UserName);
 
             listener = new HttpListener();
             try
